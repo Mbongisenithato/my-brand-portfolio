@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mbongiseni Thato Letseka | Software Engineer & Architect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-[#12100e] text-[#f5f2eb] font-sans antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-[#12100e]/80 backdrop-blur-md border-b border-[#26211c]">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-amber-500 to-amber-700 flex items-center justify-center font-bold text-slate-950 text-xl shadow-lg shadow-amber-500/10">M</div>
+                <span class="text-xl font-bold tracking-tight">Mbongiseni<span class="text-amber-500">.dev</span></span>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#projects" class="hover:text-amber-400 transition-colors">Featured Work</a>
+                <a href="#sponsor-slot" class="hover:text-amber-400 transition-colors">Sponsor Slot</a>
+            </nav>
+            <div>
+                <button onclick="openContactModal()" class="bg-[#f5f2eb] hover:bg-amber-500 text-slate-950 font-semibold px-5 py-2.5 rounded-full transition-all duration-300 shadow-sm cursor-pointer">
+                    Contact & Hire Me
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-12 px-6 max-w-7xl mx-auto">
+        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-amber-950/40 border border-amber-800/40 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-8">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+            <span>Open for Collaboration & Sponsorships</span>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight max-w-4xl leading-[1.1] mb-8">
+            Automating Complexity: <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-500 to-orange-600">Intelligent Systems & Full-Stack Assets.</span>
+        </h1>
+        
+        <p class="text-lg md:text-xl text-slate-400 max-w-2xl leading-relaxed mb-12">
+            Software Engineer & Freelance Architect. I build high-performance, automated software solutions, specializing in AI model optimization and cloud-native applications.
+        </p>
+    </section>
+
+    <!-- Sponsorship / "Backed By" Banner (Fixed Interactive Links) -->
+    <section class="py-8 px-6 max-w-7xl mx-auto border-y border-[#26211c] bg-[#1a1714]">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+            <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 whitespace-nowrap">Trusted & Supported By</span>
+            <div class="flex flex-wrap items-center justify-center md:justify-end gap-6 text-slate-400 text-sm font-bold tracking-wide">
+                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20CloudPartner%20API" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-cloud text-amber-500"></i> CloudPartner API</a>
+                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20DevSec%20Labs" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-shield-halved text-amber-500"></i> DevSec Labs</a>
+                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20QuantizeHost" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-bolt text-amber-500"></i> QuantizeHost</a>
+                <a href="mailto:letsekastark@gmail.com?subject=Brand%20Sponsorship%20Slot%20Inquiry" class="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3.5 py-2 rounded-xl hover:bg-amber-500/20 transition-colors">+ Your Brand Here</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Work / Projects Section -->
+    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-4">Featured Open-Source Assets</h2>
+            <p class="text-slate-400 max-w-xl">A curated selection of my public repositories, showcasing production-ready code, AI integrations, and developer tools.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Project 1 -->
+            <div class="bg-[#181512] border border-[#2b241e] rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Auto-Quantization Assistant</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">Automates the safe precision reduction of machine learning models, featuring support for symmetric, asymmetric, and clipping optimization methods.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">Python</span>
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">PyTorch</span>
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">AI-Assisted</span>
+                    </div>
+                    <a href="https://github.com/Mbongisenithato" target="auto-quantization-assistant" class="inline-flex items-center text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+                        View Repository <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-[#181512] border border-[#2b241e] rounded-2xl p-8 hover:border-amber-500/50 transition-all duration-300 flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-amber-400 text-xl mb-6">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Automated Infrastructure Tools</h3>
+                    <p class="text-slate-400 mb-6 leading-relaxed">A suite of DevOps scripts and configurations for automating CI/CD pipelines, Kubernetes cluster provisioning, and scalable serverless deployment.</p>
+                </div>
+                <div>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">DevOps</span>
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">CLI</span>
+                        <span class="px-3 py-1 rounded-md bg-[#241f1a] text-amber-300 text-xs font-medium">Docker</span>
+                    </div>
+                    <a href="https://github.com/Mbongisenithato" target="_blank" class="inline-flex items-center text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors">
+                        View Repository <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 text-center">
+            <a href="https://github.com/Mbongisenithato" target="_blank" class="inline-flex items-center px-6 py-3 rounded-xl border border-[#2b241e] bg-[#181512] hover:bg-[#241f1a] text-slate-200 font-semibold transition-all duration-300">
+                View All Repositories on GitHub <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Dedicated Ad Space / Tool of the Month Slot (Fixed Action Button) -->
+    <section id="sponsor-slot" class="py-12 px-6 max-w-7xl mx-auto">
+        <div class="bg-gradient-to-r from-amber-950/30 via-[#181512] to-[#181512] border border-amber-500/30 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-start space-x-4">
+                <div class="w-12 h-12 rounded-xl bg-amber-500/20 flex items-center justify-center text-amber-400 text-xl flex-shrink-0 mt-1">
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div>
+                    <span class="text-xs font-bold text-amber-400 uppercase tracking-widest">Featured Developer Tool of the Month</span>
+                    <h4 class="text-xl font-bold text-white mt-1">Accelerate Your Deployments with CloudPartner CLI</h4>
+                    <p class="text-slate-400 text-sm mt-1">The secure, ultra-fast serverless deployment companion used in modern full-stack workflows.</p>
+                </div>
+            </div>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=letsekastark@gmail.com&su=Tool%20Sponsorship%20Inquiry%20-%20Claim%20Slot" target="_blank" class="whitespace-nowrap px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/20 text-center">
+    Claim Sponsor Slot
+</a>
+        </div>
+    </section>
+
+    <!-- Footer & Socials Section -->
+    <footer class="border-t border-[#26211c] bg-[#12100e] py-12 px-6 mt-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-amber-500 flex items-center justify-center font-bold text-slate-950 text-sm">M</div>
+                <span class="text-sm font-semibold text-slate-400">© 2026 Mbongiseni Thato Letseka. All rights reserved.</span>
+            </div>
+
+            <!-- Social Media Links (Fixed Github Target) -->
+            <div class="flex items-center space-x-5 text-xl text-slate-400">
+                <a href="https://www.linkedin.com/in/mbongiseni-letseka-74b3651b4/" target="_blank" class="hover:text-amber-400 transition-colors" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Mbongisenithato" target="_blank" class="hover:text-amber-400 transition-colors" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/@MbongiseniThato" target="_blank" class="hover:text-amber-400 transition-colors" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/mbongiseni.thato/" target="_blank" class="hover:text-amber-400 transition-colors" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.twitch.tv/letsekastark" target="_blank" class="hover:text-amber-400 transition-colors" title="Twitch"><i class="fa-brands fa-twitch"></i></a>
+                <a href="https://discord.com" target="mbongisenit" class="hover:text-amber-400 transition-colors" title="Discord"><i class="fa-brands fa-discord"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Hire Me / Consulting Modal -->
+    <div id="contactModal" class="fixed inset-0 z-50 bg-[#12100e]/80 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-[#181512] border border-[#2b241e] rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeContactModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white text-xl">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            
+            <h3 class="text-2xl font-bold mb-2">Project & Consulting Inquiry</h3>
+            <p class="text-slate-400 text-sm mb-6">Select your project scope and budget to connect directly regarding architecture, AI optimization, or sponsorships.</p>
+            
+            <form action="mailto:letsekastark@gmail.com" method="GET" enctype="text/plain" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Type</label>
+                    <select name="Service" class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500">
+                        <option>AI Model Optimization / Quantization</option>
+                        <option>Full-Stack Architecture & Cloud Dev</option>
+                        <option>DevOps & CI/CD Pipeline Automation</option>
+                        <option>Brand / Tool Sponsorship Placement</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Estimated Budget Tier (Beginner / Starter Friendly)</label>
+                    <select name="Budget" class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500">
+                        <option>$150 - $300 (Quick Script / Bug Fix / Mini-Task)</option>
+                        <option>$300 - $700 (Tool Spotlight / Standard Feature Sprint)</option>
+                        <option>$700 - $1,500+ (Full Component / Architecture Build)</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Your Message / Details</label>
+                    <textarea name="Body" rows="3" placeholder="Briefly describe your requirements..." class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold py-3.5 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                    Send Inquiry to letsekastark@gmail.com
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function openContactModal() {
+            document.getElementById('contactModal').classList.remove('hidden');
+        }
+        function closeContactModal() {
+            document.getElementById('contactModal').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
