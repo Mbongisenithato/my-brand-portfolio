@@ -44,15 +44,15 @@
         </p>
     </section>
 
-    <!-- Sponsorship / "Backed By" Banner (Fixed Interactive Links) -->
+    <!-- Sponsorship / "Backed By" Banner (Secured with Modal Triggers) -->
     <section class="py-8 px-6 max-w-7xl mx-auto border-y border-[#26211c] bg-[#1a1714]">
         <div class="flex flex-col md:flex-row items-center justify-between gap-6">
             <span class="text-xs font-semibold uppercase tracking-widest text-slate-500 whitespace-nowrap">Trusted & Supported By</span>
-            <div class="flex flex-wrap items-center justify-center md:justify-end gap-6 text-slate-400 text-sm font-bold tracking-wide">
-                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20CloudPartner%20API" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-cloud text-amber-500"></i> CloudPartner API</a>
-                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20DevSec%20Labs" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-shield-halved text-amber-500"></i> DevSec Labs</a>
-                <a href="mailto:letsekastark@gmail.com?subject=Partnership%20Inquiry%20-%20QuantizeHost" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs"><i class="fa-solid fa-bolt text-amber-500"></i> QuantizeHost</a>
-                <a href="mailto:letsekastark@gmail.com?subject=Brand%20Sponsorship%20Slot%20Inquiry" class="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3.5 py-2 rounded-xl hover:bg-amber-500/20 transition-colors">+ Your Brand Here</a>
+            <div class="flex flex-wrap items-center justify-center md:justify-end gap-4 text-slate-400 text-sm font-bold tracking-wide">
+                <button onclick="openContactModalWithService('Full-Stack Architecture & Cloud Dev')" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs cursor-pointer"><i class="fa-solid fa-cloud text-amber-500"></i> CloudPartner API</button>
+                <button onclick="openContactModalWithService('DevOps & CI/CD Pipeline Automation')" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs cursor-pointer"><i class="fa-solid fa-shield-halved text-amber-500"></i> DevSec Labs</button>
+                <button onclick="openContactModalWithService('AI Model Optimization / Quantization')" class="hover:text-amber-400 transition-colors flex items-center gap-2 bg-[#12100e] border border-[#2b241e] px-3.5 py-2 rounded-xl text-xs cursor-pointer"><i class="fa-solid fa-bolt text-amber-500"></i> QuantizeHost</button>
+                <button onclick="openContactModalWithService('Brand / Tool Sponsorship Placement')" class="text-xs text-amber-400 bg-amber-500/10 border border-amber-500/30 px-3.5 py-2 rounded-xl hover:bg-amber-500/20 transition-colors cursor-pointer">+ Your Brand Here</button>
             </div>
         </div>
     </section>
@@ -115,7 +115,7 @@
         </div>
     </section>
 
-    <!-- Dedicated Ad Space / Tool of the Month Slot (Fixed Action Button) -->
+    <!-- Dedicated Ad Space / Tool of the Month Slot (Secured Action Button) -->
     <section id="sponsor-slot" class="py-12 px-6 max-w-7xl mx-auto">
         <div class="bg-gradient-to-r from-amber-950/30 via-[#181512] to-[#181512] border border-amber-500/30 rounded-2xl p-8 flex flex-col md:flex-row items-center justify-between gap-6">
             <div class="flex items-start space-x-4">
@@ -128,9 +128,9 @@
                     <p class="text-slate-400 text-sm mt-1">The secure, ultra-fast serverless deployment companion used in modern full-stack workflows.</p>
                 </div>
             </div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=letsekastark@gmail.com&su=Tool%20Sponsorship%20Inquiry%20-%20Claim%20Slot" target="_blank" class="whitespace-nowrap px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/20 text-center">
+            <button onclick="openContactModalWithService('Brand / Tool Sponsorship Placement')" class="whitespace-nowrap px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-amber-500/20 text-center cursor-pointer">
                 Claim Sponsor Slot
-            </a>
+            </button>
         </div>
     </section>
 
@@ -162,7 +162,7 @@
             </button>
             
             <h3 class="text-2xl font-bold mb-2">Project & Consulting Inquiry</h3>
-            <p class="text-slate-400 text-sm mb-6">Select your project scope and budget to connect directly regarding architecture, AI optimization, or sponsorships.</p>
+            <p class="text-slate-400 text-sm mb-6">Select your project scope and budget to connect securely regarding architecture, AI optimization, or sponsorships.</p>
             
             <form action="https://formspree.io/f/xjykgrja" method="POST" class="space-y-4">
                 <div>
@@ -171,7 +171,7 @@
                 </div>
                 <div>
                     <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Service Type</label>
-                    <select name="Service" class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500">
+                    <select id="serviceSelect" name="Service" class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500">
                         <option value="AI Model Optimization / Quantization">AI Model Optimization / Quantization</option>
                         <option value="Full-Stack Architecture & Cloud Dev">Full-Stack Architecture & Cloud Dev</option>
                         <option value="DevOps & CI/CD Pipeline Automation">DevOps & CI/CD Pipeline Automation</option>
@@ -179,7 +179,7 @@
                     </select>
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Estimated Budget Tier (Beginner / Starter Friendly)</label>
+                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Estimated Budget Tier</label>
                     <select name="Budget" class="w-full bg-[#12100e] border border-[#2b241e] rounded-xl px-4 py-3 text-slate-200 text-sm focus:outline-none focus:border-amber-500">
                         <option value="$150 - $300 (Quick Script / Bug Fix / Mini-Task)">$150 - $300 (Quick Script / Bug Fix / Mini-Task)</option>
                         <option value="$300 - $700 (Tool Spotlight / Standard Feature Sprint)">$300 - $700 (Tool Spotlight / Standard Feature Sprint)</option>
@@ -200,6 +200,16 @@
     <script>
         function openContactModal() {
             document.getElementById('contactModal').classList.remove('hidden');
+        }
+        function openContactModalWithService(serviceName) {
+            const select = document.getElementById('serviceSelect');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].value === serviceName) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            openContactModal();
         }
         function closeContactModal() {
             document.getElementById('contactModal').classList.add('hidden');
